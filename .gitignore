@@ -1,0 +1,65 @@
+# node_modules
+node_modules/
+
+# Vite 构建输出目录（默认是 dist）
+dist/
+build/
+
+# 本地环境变量
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Mac 系统文件
+.DS_Store
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# VSCode 配置
+.vscode/
+.history/
+
+# IDE配置
+.idea/
+*.iml
+
+# 系统缩略图缓存
+Thumbs.db
+
+# 本地运行数据
+*.log
+*.gz
+.cache/
+.parcel-cache/
+*.tsbuildinfo
+
+# 文件预处理工具缓存（如 prettier）
+.prettier*
+
+# Optional: 覆盖测试输出
+coverage/
+__snapshots__/
+
+# Storybook 构建产物
+out/
+
+# Optional: bun / vite 的临时缓存
+bun.lockb
+.vite/
+vite.config.ts.bak
+
+# WebStorm 等 JetBrains 工具文件
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# OS临时文件
+*.swp
+*.tmp
+*~

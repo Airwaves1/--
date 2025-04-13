@@ -1,0 +1,15 @@
+.toolbar-btn {
+  @apply px-3 py-1.5 bg-gray-700 hover:bg-gray-600 rounded-md text-sm 
+    transition-colors flex items-center text-gray-100;
+}
+
+.control-input {
+  @apply w-full px-2 py-1 bg-gray-700 border border-gray-600 rounded-md
+    text-sm text-gray-100 focus:ring-2 focus:ring-blue-500 
+    focus:border-transparent outline-none;
+}
+
+.tree-item {
+  @apply px-2 py-1 hover:bg-gray-700/50 rounded-md cursor-pointer 
+    transition-colors flex items-center;
+}
