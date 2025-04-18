@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import * as GaussianSplats3D from '@mkkellogg/gaussian-splats-3d';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';  // 引入GLTFLoader
 import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader';  // 引入RGBELoader
-import { Block, Text, Button } from 'three-mesh-ui';
+import { Block, Text } from 'three-mesh-ui';
 
 // 创建一个渲染器类
 class Renderer {
@@ -115,27 +115,27 @@ class Renderer {
         mainPanel.add(titleText);
 
         // 创建一个按钮
-        const actionButton = new Button({
-            width: 0.8,
-            height: 0.2,
-            backgroundColor: new THREE.Color(0x0080ff),
-            borderRadius: 0.03,
-            justifyContent: 'center',
-            alignItems: 'center'
-        });
-        actionButton.position.set(0, -0.3, 0);
-        const buttonText = new Text({
-            content: '执行操作',
-            fontSize: 0.08,
-            fontColor: new THREE.Color(0xffffff)
-        });
-        actionButton.add(buttonText);
-        mainPanel.add(actionButton);
+        // const actionButton = new Button({
+        //     width: 0.8,
+        //     height: 0.2,
+        //     backgroundColor: new THREE.Color(0x0080ff),
+        //     borderRadius: 0.03,
+        //     justifyContent: 'center',
+        //     alignItems: 'center'
+        // });
+        // actionButton.position.set(0, -0.3, 0);
+        // const buttonText = new Text({
+        //     content: '执行操作',
+        //     fontSize: 0.08,
+        //     fontColor: new THREE.Color(0xffffff)
+        // });
+        // actionButton.add(buttonText);
+        // mainPanel.add(actionButton);
 
-        // 按钮点击事件
-        actionButton.onClick(() => {
-            console.log('按钮被点击');
-        });
+        // // 按钮点击事件
+        // actionButton.onClick(() => {
+        //     console.log('按钮被点击');
+        // });
     }
 }
 

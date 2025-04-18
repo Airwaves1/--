@@ -43,16 +43,16 @@ export default function App() {
     }
   }, [])
   return (
-    <EditorPage />
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={
-    //       <RequireAuth>
-    //         <EditorPage />
-    //       </RequireAuth>
-    //     } />
-    //     <Route path="/auth" element={<AuthPage />} />
-    //   </Routes>
-    // </BrowserRouter>
+    // <EditorPage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <RequireAuth>
+            <EditorPage />
+          </RequireAuth>
+        } />
+        <Route path="/auth" element={<AuthPage />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
