@@ -24,7 +24,7 @@ export default function App() {
     // 清除 sessionStorage
     sessionStorage.clear()
     
-    // 清除 indexedDB（需要异步处理）
+    // 清除 indexedDB
     if (window.indexedDB) {
       window.indexedDB.databases().then(dbs => {
         dbs.forEach(db => {
@@ -33,7 +33,7 @@ export default function App() {
       })
     }
     
-    // 清除 Service Worker 缓存（如果使用 PWA）
+    // 清除 Service Worker 缓存
     if ('serviceWorker' in navigator && 'caches' in window) {
       caches.keys().then(cacheNames => {
         cacheNames.forEach(cacheName => {
@@ -43,16 +43,16 @@ export default function App() {
     }
   }, [])
   return (
-    // <EditorPage />
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={
-          <RequireAuth>
-            <EditorPage />
-          </RequireAuth>
-        } />
-        <Route path="/auth" element={<AuthPage />} />
-      </Routes>
-    </BrowserRouter>
+    <EditorPage />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={
+    //       <RequireAuth>
+    //         <EditorPage />
+    //       </RequireAuth>
+    //     } />
+    //     <Route path="/auth" element={<AuthPage />} />
+    //   </Routes>
+    // </BrowserRouter>
   )
 }
